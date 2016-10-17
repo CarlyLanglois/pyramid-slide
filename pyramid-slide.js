@@ -1,7 +1,9 @@
 document.getElementById("draw-form").oninput = function() {
 
     // figure out the height the user typed
-    heightStr = document.getElementById("height").value
+    heightStr = document.getElementById("height").value;
+
+    document.getElementById("height-val").innerHTML = heightStr;
 
     // convert the string to an int
     height = parseInt(heightStr);
